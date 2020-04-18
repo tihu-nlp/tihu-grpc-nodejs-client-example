@@ -193,6 +193,11 @@ debug@^3.2.6:
   dependencies:
     ms "^2.1.1"
 
+debug@~0.7.2:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-0.7.4.tgz#06e1ea8082c2cb14e39806e22e2f6f757f92af39"
+  integrity sha1-BuHqgILCyxTjmAbiLi9vdX+Srzk=
+
 decamelize@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
@@ -668,6 +673,13 @@ util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+waveheader@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/waveheader/-/waveheader-0.0.2.tgz#5db8f533c19f68afd03813306d06e7bde2b8bc43"
+  integrity sha1-Xbj1M8GfaK/QOBMwbQbnveK4vEM=
+  dependencies:
+    debug "~0.7.2"
 
 wide-align@^1.1.0:
   version "1.1.3"
