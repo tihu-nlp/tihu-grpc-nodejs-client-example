@@ -1,11 +1,45 @@
 {
-  "name": "tihu-grpc-nodejs",
+  "name": "tihu-grpc-nodejs-client-example",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "start:protoc-gen-ts": "ts-node src/protoc-gen-ts.ts",
+    "start:protoc-gen-grpc": "ts-node src/protoc-gen-grpc.ts",
+    "generate:protoc-gen-ts": "sh ./scripts/protoc-gen-ts.sh",
+    "generate:protoc-gen-grpc": "sh ./scripts/protoc-gen-grpc.sh"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "pretty-quick --write"
+    ]
+  },
+  "resolutions": {
+    "debug": "^2.6.9"
+  },
   "dependencies": {
     "@grpc/proto-loader": "^0.5.4",
+    "@improbable-eng/grpc-web": "^0.12.0",
+    "@improbable-eng/grpc-web-node-http-transport": "^0.12.0",
+    "google-protobuf": "^3.11.4",
     "grpc": "^1.24.2",
     "waveheader": "^0.0.2"
+  },
+  "devDependencies": {
+    "@types/google-protobuf": "^3.7.2",
+    "grpc-tools": "^1.8.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.6",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1",
+    "ts-node": "^8.8.2",
+    "ts-protoc-gen": "^0.12.0",
+    "typescript": "^3.8.3"
   }
 }

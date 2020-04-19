@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "umd",
+    "target": "es6",
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "lib": ["es2015", "es2016", "es2017", "es2018"],
+    "downlevelIteration": true,
+    "baseUrl": "src",
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules"]
+}
